@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Pizza {
-    int numOfIngredients;
-    List<String> ingredients;
+    public int numOfIngredients;
+    public List<String> ingredients;
 
     public Pizza(int numOfIngredients, List<String> ingredients) {
         this.numOfIngredients = numOfIngredients;
