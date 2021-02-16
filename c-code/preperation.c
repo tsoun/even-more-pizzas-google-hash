@@ -28,8 +28,8 @@ void readInput(FILE *fp, int *numOfPizzas, int **teams, int **numOfIngredients, 
     *numOfIngredients = malloc(*numOfPizzas * sizeof(int));
     for (i = 0; i < *numOfPizzas; i++)
     {
-        (*ingredients)[i] = malloc(sizeof(char *) * i);
         fscanf(fp, "%d", &(*numOfIngredients)[i]);
+        (*ingredients)[i] = malloc(sizeof(char *) * (*numOfIngredients)[i]);
         for (j = 0; j < (*numOfIngredients)[i]; j++)
         {
             fscanf(fp, "%s", ingredient);
