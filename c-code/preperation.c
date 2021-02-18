@@ -3,6 +3,8 @@
 #include <strings.h>
 
 void readInput(FILE *, int *, int **, int **, char ****);
+void calculateDelivery();
+void printOutput();
 int main()
 {
     FILE *input, *output;
